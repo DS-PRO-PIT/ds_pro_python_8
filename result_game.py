@@ -78,5 +78,35 @@ def score_attempts(search_function,
     return score
 
 
+def random_binary_search(hidden_number: int = 1) -> int:
+    """Reveal hidden number from 1 to 100
+
+    Args:
+        hidden_number (int, optional): Hidden number to reveal. Defaults to 1.
+
+    Returns:
+        int: Counted attempts for win
+    """
+    if not(1 <= hidden_number <= 100):
+        raise ValueError('Expected value from 1 to 100')
+    
+    interval = (1, 101) # mathematially half-open left-closed interval - [1, 101)
+    max_attempts_to_panic = 1 + len(range(*interval))
+    
+    for attempt_index in range(max_attempts_to_panic):
+        
+        predict_number = np.random.randint(*interval)
+
+        if predict_number == hidden_number:
+            return attempt_index+1
+
+        if predict_number < hidden_number:
+            interval = (predict_number+1, interval[1])
+        elif hidden_number < predict_number:
+            interval = (interval[0], predict_number)
+
+    raise RuntimeError('Algorithm working not like expected')
+
+
 #reveal_max_attempts(binary_search)
 #score_attempts(binary_search)
