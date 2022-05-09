@@ -13,6 +13,8 @@
 
 Проект по курсу [Skillfactory Data Science](https://skillfactory.ru/data-scientist-pro), модуль "Инструменты для Data Science".
 
+Другие проекты по курсу можно найти [здесь](/../../../../DS-PRO-PIT/ds_pro_work).
+
 :arrow_up:[к оглавлению](#Оглавление)
 
 
