@@ -106,7 +106,3 @@ def random_binary_search(hidden_number: int = 1) -> int:
             interval = (interval[0], predict_number)
 
     raise RuntimeError('Algorithm working not like expected')
-
-
-#reveal_max_attempts(binary_search)
-#score_attempts(binary_search)
