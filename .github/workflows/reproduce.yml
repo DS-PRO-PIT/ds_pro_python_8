@@ -1,4 +1,4 @@
-name: Reproduce 1
+name: Воспроизводимость кода
 
 on: workflow_dispatch
 
