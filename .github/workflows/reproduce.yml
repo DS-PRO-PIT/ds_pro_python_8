@@ -9,4 +9,5 @@ jobs:
 
     steps:
     - name: Reproducing
-      run: echo "Hello ${{ github.event.inputs.name }}"
+    - uses: actions/checkout@v1
+    - uses: ./reproduce
