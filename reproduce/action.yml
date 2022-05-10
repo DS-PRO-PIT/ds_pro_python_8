@@ -1,17 +1,7 @@
-name: "Hello Actions"
-description: "Greet someone"
-author: "octocat@github.com"
-
-inputs:
-  MY_NAME:
-    description: "Who to greet"
-    required: true
-    default: "World"
+name: "Воспроизводимость кода"
+description: "Описание: воспроизводимость кода"
+author: "DS-PRO-PIT@yandex.ru"
 
 runs:
   using: "docker"
   image: "Dockerfile"
-
-branding:
-  icon: "mic"
-  color: "purple"
