@@ -1,0 +1,7 @@
+name: "Воспроизведение кода"
+description: "Greet someone"
+author: "DS-PRO-PIT@yandex.ru"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
