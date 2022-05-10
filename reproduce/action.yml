@@ -1,5 +1,5 @@
 name: "Воспроизводимость кода"
-description: "Описание: воспроизводимость кода"
+description: "Проверка воспроизводимости кода"
 author: "DS-PRO-PIT@yandex.ru"
 
 runs:
