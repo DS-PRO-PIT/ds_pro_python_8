@@ -1,4 +1,4 @@
-name: Manual workflow 1.3
+name: Reproduce
 
 on:
   workflow_dispatch:
