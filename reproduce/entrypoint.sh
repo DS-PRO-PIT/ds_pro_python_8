@@ -20,8 +20,13 @@ sh -c "echo \#pip freeze"
 #sh -c "pip freeze"
 #sh -c "pip freeze >&1"
 #sh -c "ls > ls.txt"
-sh -c "ls -l"
-cat result_game.py
-ls -l /
-ls -l > /ls.txt
-ls -l /
+#sh -c "ls -l"
+#cat result_game.py
+#ls -l /
+#ls -l > /ls.txt
+#ls -l /
+echo ---
+echo $PATH
+echo ---
+sh -c "echo $PATH"
+echo ---
