@@ -14,6 +14,7 @@
 
 python the_game.py
 
+pip freeze --no-cache-dir
 
 #sh -c "echo"
 #sh -c "echo \#pip freeze"
