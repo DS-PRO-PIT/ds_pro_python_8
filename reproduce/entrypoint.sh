@@ -8,5 +8,6 @@ sh -c "echo"
 sh -c "echo \#uname -r"
 sh -c "uname -r"
 
+sh -c "echo"
 sh -c "echo python --version"
 sh -c "python --version"
