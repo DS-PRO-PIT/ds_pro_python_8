@@ -14,4 +14,5 @@ sh -c "python --version"
 
 sh -c "echo"
 sh -c "echo \#pip freeze"
+sh -c "pwd"
 sh -c "pip freeze"
