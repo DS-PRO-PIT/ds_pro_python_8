@@ -21,3 +21,4 @@ sh -c "echo \#pip freeze"
 #sh -c "pip freeze >&1"
 #sh -c "ls > ls.txt"
 sh -c "ls -l"
+cat result_game.py
