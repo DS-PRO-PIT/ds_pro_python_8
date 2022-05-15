@@ -5,6 +5,7 @@ FROM ubuntu:22.04
 #RUN add-apt-repository ppa:deadsnakes/ppa
 #RUN apt-get install -y python3.9 python3.9-distutils
 RUN apt update
+RUN apt install apt-utils
 RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get install -y python3.9
