@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-python the_game.py
+python test_game.py
 
 sh -c "echo"
 sh -c "echo \#cat /etc/os-release"
