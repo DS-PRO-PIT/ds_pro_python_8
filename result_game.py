@@ -27,7 +27,7 @@ def binary_search(hidden_number: int = 1) -> int:
     if not(1 <= hidden_number <= 100):
         raise ValueError('Expected value from 1 to 100')
     
-    interval = (1, 101) # mathematially half-open left-closed interval - [1, 101)
+    interval = (1, 101) # math interval - [1, 101)
     max_attempts_to_panic = int(1 + log2(len_range(*interval)))
     
     for attempt_index in range(max_attempts_to_panic):
@@ -47,11 +47,13 @@ def binary_search(hidden_number: int = 1) -> int:
 
 def reveal_max_attempts(search_function,
                        number_of_repetitions: int = 1000) -> int:
-    """Reveal max attempts count by calling several times with random hidden number
+    """Reveal max attempts count by calling several times \
+        with random hidden number
 
     Args:
         search_function (callable): Checking function
-        number_of_repetitions (int, optional): Number of repetitions to check. Defaults to 1000.
+        number_of_repetitions (int, optional): Number of repetitions to check.\
+            Defaults to 1000.
 
     Returns:
         int: Max attempts count 
@@ -70,11 +72,13 @@ def reveal_max_attempts(search_function,
 
 def score_attempts(search_function,
                    number_of_repetitions: int = 1000) -> int:
-    """Reveal arithmetic mean of attempts by calling several times with random hidden number
+    """Reveal arithmetic mean of attempts by calling several times \
+        with random hidden number
 
     Args:
         search_function (callable): Checking function
-        number_of_repetitions (int, optional): Number of repetitions to check. Defaults to 1000.
+        number_of_repetitions (int, optional): Number of repetitions to check.\
+            Defaults to 1000.
 
     Returns:
         int: Arithmetic mean of attempts
@@ -103,7 +107,7 @@ def random_binary_search(hidden_number: int = 1) -> int:
     if not(1 <= hidden_number <= 100):
         raise ValueError('Expected value from 1 to 100')
     
-    interval = (1, 101) # mathematially half-open left-closed interval - [1, 101)
+    interval = (1, 101) # math interval - [1, 101)
     max_attempts_to_panic = 1 + len_range(*interval)
     
     for attempt_index in range(max_attempts_to_panic):
