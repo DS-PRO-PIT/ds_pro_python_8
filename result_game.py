@@ -2,6 +2,19 @@
 from math import log2
 import numpy as np
 
+def len_range(start: int, stop: int) -> int:
+    """Equivalent to len(range(start, stop))
+
+    Args:
+        start (int): equivalent to start of range()
+        stop (int): equivalent to stop of range()
+
+    Returns:
+        int: stop-start
+    """
+    return stop-start
+
+
 def binary_search(hidden_number: int = 1) -> int:
     """Use binary search algorithm to reveal hidden number from 1 to 100
 
@@ -15,7 +28,7 @@ def binary_search(hidden_number: int = 1) -> int:
         raise ValueError('Expected value from 1 to 100')
     
     interval = (1, 101) # mathematially half-open left-closed interval - [1, 101)
-    max_attempts_to_panic = int(1 + log2(len(range(*interval))))
+    max_attempts_to_panic = int(1 + log2(len_range(*interval)))
     
     for attempt_index in range(max_attempts_to_panic):
         
@@ -91,7 +104,7 @@ def random_binary_search(hidden_number: int = 1) -> int:
         raise ValueError('Expected value from 1 to 100')
     
     interval = (1, 101) # mathematially half-open left-closed interval - [1, 101)
-    max_attempts_to_panic = 1 + len(range(*interval))
+    max_attempts_to_panic = 1 + len_range(*interval)
     
     for attempt_index in range(max_attempts_to_panic):
         
