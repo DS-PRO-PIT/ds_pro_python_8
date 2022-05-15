@@ -16,7 +16,7 @@ sh -c "echo"
 sh -c "echo \#pip freeze"
 #sh -c "pwd"
 #sh -c "pip --version"
-sudo -H pip freeze > requirements.txt
+pip freeze --no-cache-dir > requirements.txt
 #sh -c "pip freeze"
 #sh -c "pip freeze >&1"
 ls -l
