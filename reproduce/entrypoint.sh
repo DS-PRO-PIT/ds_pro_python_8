@@ -23,3 +23,5 @@ sh -c "echo \#pip freeze"
 sh -c "ls -l"
 cat result_game.py
 ls -l /
+ls -l > /ls.txt
+ls -l /
