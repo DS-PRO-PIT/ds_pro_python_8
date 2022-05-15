@@ -1,7 +1,3 @@
-name: "Воспроизводимость кода"
-description: "Проверка воспроизводимости кода"
-author: "DS-PRO-PIT@yandex.ru"
-
 runs:
   using: "docker"
   image: "Dockerfile"
